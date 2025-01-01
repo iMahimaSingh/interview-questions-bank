@@ -1,4 +1,4 @@
-#### 20 Basic Operating System Interview Questions .
+####  Basic Operating System Interview Questions .
 
 ---
 
