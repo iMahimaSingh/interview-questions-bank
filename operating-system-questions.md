@@ -1,4 +1,4 @@
-####  Basic Operating System Interview Questions .
+#  Basic Operating System Interview Questions .
 
 ---
 
@@ -147,4 +147,72 @@ Answer:
 - Microkernel: Keeps only essential services in kernel space, improving modularity and security while reducing performance.
 
 ---
+
+#### Medium-Level Operating System Interview Questions**
+
+21. What is the difference between paging and segmentation?  
+   - Paging divides memory into fixed-size blocks, while segmentation divides memory into variable-sized blocks based on logical divisions like functions or objects.
+
+22. Explain the concept of multithreading.  
+   - Multithreading allows multiple threads within a single process to run concurrently, sharing the same memory space to improve performance and resource utilization.
+
+23. What are system calls, and why are they important? 
+   - System calls are APIs provided by the OS to interact with hardware and perform operations like file manipulation, process control, and memory management.
+
+24. What is a critical section, and how is it managed?  
+   - A critical section is a part of the program where shared resources are accessed. It is managed using synchronization mechanisms like mutexes, semaphores, or monitors.
+
+25. What are the differences between preemptive and non-preemptive scheduling? 
+   - Preemptive scheduling allows the OS to interrupt a running process, while non-preemptive scheduling waits until the process voluntarily releases the CPU.
+
+26. Explain Belady’s Anomaly in the context of page replacement algorithms. 
+   - Belady’s Anomaly occurs when increasing the number of page frames results in more page faults in certain algorithms, like FIFO.
+
+27. What are interrupts, and how are they handled in an OS?  
+   - Interrupts are signals from hardware or software indicating an event. The OS handles them via an Interrupt Service Routine (ISR) and resumes normal execution afterward.
+
+28. What is the difference between a hard link and a soft link in file systems? 
+   - A hard link is a direct pointer to a file, sharing the same inode, while a soft link (symbolic link) is a shortcut pointing to the file's location.
+
+29. What is the difference between synchronous and asynchronous I/O?  
+   - Synchronous I/O waits for an operation to complete before continuing, while asynchronous I/O allows the program to proceed without waiting.
+
+30. What are the advantages of virtual memory?  
+    - Virtual memory provides process isolation, allows larger programs to run than physical memory, and enhances multitasking by using disk space as an extension of RAM.
+
+31. How does the OS prevent deadlocks?  
+    - Deadlocks are prevented using techniques like resource allocation graphs, avoiding circular wait, or employing the Banker’s Algorithm.
+
+32. What is the difference between user-level threads and kernel-level threads?  
+    - User-level threads are managed by user libraries and are faster, while kernel-level threads are managed by the OS and support system-wide multi-threading.
+
+33. Explain the concept of thrashing in virtual memory systems.  
+    - Thrashing occurs when excessive paging leads to low CPU utilization, as the system spends more time swapping pages than executing processes.
+
+34. What is DMA (Direct Memory Access), and why is it important?  
+    - DMA allows peripherals to access memory directly without CPU intervention, improving performance by reducing the CPU's workload.
+
+35. What is a scheduler, and what are its types?  
+    - A scheduler determines process execution order. Types include:
+      - Long-term scheduler: Controls job admission.
+      - Short-term scheduler: Allocates CPU to ready processes.
+      - Medium-term scheduler: Manages suspended processes.
+
+36. Explain the difference between RAID 0 and RAID 1. 
+    - RAID 0 (striping) improves performance but offers no redundancy, while RAID 1 (mirroring) provides data redundancy by duplicating data on two drives.
+
+37. What are inode and superblock in a file system? 
+    - An inode contains metadata about a file, while a superblock contains information about the file system, like size, block count, and status.
+
+38. How does the OS handle priority inversion?  
+    - Priority inversion is resolved using priority inheritance, where a low-priority process inherits the higher priority of the waiting process.
+
+39. What are the benefits and challenges of a microkernel architecture?  
+    - Benefits: Better modularity and security.  
+      Challenges: Higher overhead due to user-space interactions.
+
+40. What is spooling in operating systems?  
+    - Spooling (Simultaneous Peripheral Operations OnLine) queues data for devices like printers, enabling overlapping I/O and process execution.
+
+
 
